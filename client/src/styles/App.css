@@ -1,0 +1,108 @@
+html {box-sizing:border-box; font-family: sans-serif;}
+*, *::before, *::after {box-sizing:inherit;}
+
+body {
+  background: rgb(246, 246, 246);
+}
+
+.goingNotGoing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.goingNotGoing .goingContainer,
+.goingNotGoing .notGoingContainer {
+  width: 18%;
+}
+
+
+.inviteContainer {
+  background: rgb(234, 234, 234);
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 300px;
+}
+
+.goingContainer,
+.notGoingContainer {
+  background: rgb(234, 234, 234);
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 300px;
+}
+
+.attendanceDiv {
+  background: rgb(246, 246, 246);
+  display: flex;
+  height: 50px;
+  justify-content: space-evenly;
+}
+
+.imgDiv {
+  border: .5px solid lightgray;
+  height: 250px;
+}
+
+.imgDiv img {
+  display: block;
+  border-radius: 50%;
+  margin: 50px auto;
+  box-shadow: 0px 0px 4px 3px gray;
+  width: 150px;
+}
+
+.contactDiv {
+  border: .5px solid lightgray;
+  height: 150px;
+  padding: 0 7px;
+}
+
+.contactDiv .name {
+  text-transform: capitalize;
+}
+
+.contactDiv p {
+  font-weight: bold;
+  margin: 25px 0;
+}
+
+.buttonDiv {
+  border: .5px solid lightgray;
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+}
+
+.buttonDiv .decline,
+.buttonDiv .accept  {
+  height: 30px;
+  margin-top: 8px;
+  width: 60px;
+}
+
+.buttonDiv .decline {
+background: rgb(238, 43, 41);
+border: none;
+color: white;
+}
+
+.buttonDiv .accept {
+background: rgb(63, 164, 62);
+border: none;
+color: white;
+}
+
+.buttonDiv .decline:focus,
+.buttonDiv .accept:focus {
+  outline: none;
+}
+
+.buttonDiv .decline:active,
+.buttonDiv .accept:active {
+  height: 29px;
+  transition: height width .2s ease;
+  width: 59px;
+}
