@@ -21,7 +21,7 @@ body {
   background: rgb(234, 234, 234);
   height: 500px;
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 30px;
   width: 300px;
 }
 
@@ -36,9 +36,20 @@ body {
 
 .attendanceDiv {
   background: rgb(246, 246, 246);
+  color: blue;
   display: flex;
   height: 50px;
   justify-content: space-evenly;
+}
+
+.attendanceDiv a {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.attendanceDiv a:visited {
+  color: blue;
 }
 
 .imgDiv {
@@ -58,6 +69,7 @@ body {
   border: .5px solid lightgray;
   height: 150px;
   padding: 0 7px;
+  word-wrap: break-word;
 }
 
 .contactDiv .name {
@@ -66,7 +78,12 @@ body {
 
 .contactDiv p {
   font-weight: bold;
-  margin: 25px 0;
+  margin: 20px 0;
+}
+
+.contactDiv p span {
+  font-size: 15px;  
+  font-weight: lighter;
 }
 
 .buttonDiv {
@@ -105,4 +122,17 @@ color: white;
   height: 29px;
   transition: height width .2s ease;
   width: 59px;
+}
+
+.goingNotGoing a {
+  color: blue;
+  font-size: 22px;
+  left: 610px;
+  position: absolute;
+  text-decoration: none;
+  top: 30px;
+}
+
+.goingNotGoing a:visited {
+  color: blue;
 }
